@@ -29,10 +29,10 @@ handler.all = async function (m, { isBlocked }) {
     // ketika ada yang invite/kirim link grup di chat pribadi
     if ((m.mtype === 'groupInviteMessage' || m.text.startsWith('https://chat') || m.text.startsWith('Buka tautan ini')) && !m.isBaileys && !m.isGroup && !m.fromMe && !m.isOwner) {
         this.send2ButtonLoc(m.chat, await (await fetch(fla + 'sewa bot')).buffer(), `╠═〘 Beli Bot 〙 ═
-╠➥ *1 Bulan* :      *Rp 10000*
-╠➥ *Permanen* : *Rp 15000*
-╠➥ *Premium* :   *Rp 15000*
-╠➥ *Sc Bot* :        *https://www.youtube.com/watch?v=d7dcw2CO4ew*
+╠➥ *1 Bulan* :      *Rp 10.000.00*
+╠➥ *Permanen* : *Rp 15.000.00*
+╠➥ *Premium* :   *Rp 10.000.00*
+╠➥ *Jadi Owner* :  *Rp 20.000.00*
 ║
 ╠═〘 PEMBAYARAN 〙 ═
 ╠➥ Gopay, Dana, Dan Pulsa
@@ -40,7 +40,7 @@ handler.all = async function (m, { isBlocked }) {
 ╠═ Tertarik Untuk Beli Bot Ini?
 ╠➥Ketuk Tombol Di Bawah Ya
 ║
-╠═ ©2022 King Of Bear
+╠═ ©2022 Senyamiku Bot
 ╠═ Scrip original by Nurutomo
 ╠═〘 ${namabot} 〙 ═`.trim(), footer, 'Dana', '#viadana', 'GoPay', '#viagopay', m)
 }
